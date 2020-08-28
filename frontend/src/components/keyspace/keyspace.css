@@ -1,0 +1,6 @@
+tr.dcelement:hover{
+    background-color: #c4b4b4;
+}
+tr.dcelement.focus{
+    background-color: #c4b4b4;
+}

@@ -1,0 +1,30 @@
+
+
+
+tr.column_element:hover{
+    background-color: #c4b4b4;
+}
+tr.column_element.focus{
+    background-color: #91dca2;
+}
+tr.trigger_element:hover{
+    background-color: #c4b4b4;
+}
+tr.trigger_element.focus{
+    background-color: #91dca2;
+}
+tr.indices_element:hover{
+    background-color: #c4b4b4;
+}
+tr.indices_element.focus{
+    background-color: #91dca2;
+}
+
+.cqltext {
+    border: ridge 2px;
+    padding: 5px;
+    width: 100%;
+    height: 100vh;
+    min-height: 5em;
+    overflow: auto;
+}

@@ -1,0 +1,10 @@
+.right-panel{
+    margin: 2px 2px 2px 0;
+    height: 100vh;
+    float: right;
+    width: 100%;
+    overflow: scroll;
+    background-color: #EBEEF3;
+    outline: none;
+    position: relative;
+}

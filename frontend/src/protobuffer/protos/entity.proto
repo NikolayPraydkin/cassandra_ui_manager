@@ -1,0 +1,109 @@
+syntax = "proto3";
+
+message KeySpaces{
+  repeated KeySpace keyspaces = 1;
+  repeated Role roles = 2;
+}
+
+
+message KeySpace{
+  string name = 1;
+  bool durableWrites = 2;
+  map<string, string> replication = 3;
+  repeated Table tables= 4;
+  repeated UserType user_types = 5;
+  repeated UserFunction user_functions = 6;
+  repeated AggregateFunction aggregate_functions = 7;
+  repeated MateriliazedView views = 8;
+  string connectionAlias = 9;
+}
+
+message Table{
+  string name = 1;
+  repeated Column columns = 2;
+  repeated string partitionKey = 3;
+  repeated string clusteringKey = 4;
+  map<string,string> options = 5;
+  repeated Index indices = 6;
+  string describe = 7;
+  string connectionAlias = 8;
+  string keyspace = 9;
+
+}
+
+message Index {
+  string name = 1;
+  string className = 2;
+  bool isIndexOnKeys = 3;
+  bool isIndexOnValues = 4;
+  string column = 5;
+  string keyspace = 6;
+}
+message Column{
+  string name = 1;
+  string type = 2;
+  bool isPartitionKey = 3;
+  bool isClusteringKey = 4;
+  bool isStatic = 5;
+}
+
+message UserType{
+  string name = 1;
+  repeated Field fields = 2;
+}
+
+message Field{
+  string name = 1;
+  string type = 2;
+}
+message UserFunction{
+  string name = 1;
+  string keyspace = 2;
+  bool orReplace = 3;
+  bool ifNotExist = 4;
+  string returnType = 5;
+  bool calledOnNullInput = 6;
+  string language = 7;
+  string signature = 8;
+  string body = 9;
+  string connection = 11;
+}
+message AggregateFunction{
+  string name = 1;
+  string keyspace = 2;
+  bool orReplace = 3;
+  bool ifNotExist = 4;
+  string signature = 5;
+  string sFunc = 6;
+  string sType = 7;
+  string finalFunc = 8;
+  string initCond = 9;
+  string connection = 10;
+}
+message MateriliazedView{
+  string name = 1;
+  string baseTable = 2;
+  string select = 3;
+  bool includesAllColumns = 4;
+  string whereClause = 5;
+  repeated string primaryKeyNames = 6;
+  map<string,string> options = 7;
+  string connection = 8;
+  string nameKeySpace = 9;
+  string describe = 10;
+}
+
+message Roles{
+  repeated Role roles = 1;
+}
+message Role{
+  string name = 1;
+  string memberOf = 2;
+  string saltedHash = 3;
+  map<string,string> options = 4;
+  string connection = 5;
+}
+
+message Rows{
+  repeated string rows = 1;
+}

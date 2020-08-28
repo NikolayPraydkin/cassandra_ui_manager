@@ -1,0 +1,61 @@
+
+.connection{
+    margin-top: 10px;
+}
+
+div[role="tree-item"].hover{
+    background-color: #c4b4b4;
+}
+
+.tree-icon.connection-icon{
+    background-image:url(server_group.svg);
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+}
+
+.tree-icon.keyspace{
+    background-image:url(keyspace.png);
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+}
+.tree-icon.table{
+    background-image:url(table.png);
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+}
+
+
+.tree-push::before {
+    content: "\27A2";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.tree-push.down::before {
+    transform: rotate(90deg);
+}
+.tree-push.clear::before {
+    content: none;
+}
+
+ul[role="group"]{
+    display: none;
+}
+ul[role="group"].show{
+    display: block;
+}
+
+.type-column{
+    text-transform: lowercase;
+    opacity: 70%;
+    padding-left: 30px;
+}
+
+
+.branch{
+    padding-left: 20px;
+}

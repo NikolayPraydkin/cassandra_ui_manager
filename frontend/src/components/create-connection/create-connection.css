@@ -1,0 +1,13 @@
+.valid {
+    color: green;
+}
+
+.valid.error{
+    color: red;
+
+}
+.valid.error.scroll{
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}

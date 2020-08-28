@@ -1,0 +1,16 @@
+
+.root{
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+    width: 600px;
+
+}
+.editor{
+    border: 1px solid #ddd;
+    cursor: text;
+    font-size: 16px;
+    margin-top: 20px;
+    min-height: 400px;
+    padding-top: 20px;
+
+}

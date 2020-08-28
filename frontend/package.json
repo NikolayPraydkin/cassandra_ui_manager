@@ -1,0 +1,54 @@
+{
+  "name": "nosqlmanager",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "draft-js": "^0.11.7",
+    "jquery": "^3.5.1",
+    "lockr": "^0.8.5",
+    "lodash": "^4.17.19",
+    "protobufjs": "^6.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
+    "react-split-pane": "^0.1.92",
+    "react-virtualized": "^9.22.2",
+    "reactjs-popup": "^1.5.0"
+  },
+  "scripts": {
+    "start": "set PORT=3001 && react-scripts start",
+    "start-web": "webpack",
+    "start-pc": "set PORT=3001 && react-scripts start",
+    "build": "react-scripts build && rm -rf ../backend/src/main/resources/public && mv build ../backend/src/main/resources/public",
+    "test": "react-scripts test",
+    "eject": "react-scripts ejecnomt"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

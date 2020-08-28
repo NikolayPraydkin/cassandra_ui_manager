@@ -1,0 +1,26 @@
+.container1{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.header-buttons{
+    position: relative;
+    height: 30px;
+    margin: 2px;
+    background-color: rgb(50, 102, 144);
+}
+
+
+.header-buttons button{
+    margin-left: 15px;
+    padding: 2px;
+    height: 20px;
+}
+
+#focus {
+    background-color: #91dca2;
+}
+
+
