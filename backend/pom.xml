@@ -14,7 +14,7 @@
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
-
+                    <outputDirectory>../</outputDirectory>
                     <archive>
                         <manifest>
                             <mainClass>cassandrauimanager.Main</mainClass>
